@@ -2,25 +2,21 @@
   "pages": [{
     "path": "pages/home/index",
     "style": {
-      "navigationBarTitleText": "",
       "enablePullDownRefresh": false
     }
   }, {
     "path": "pages/cate/index",
     "style": {
-      "navigationBarTitleText": "",
       "enablePullDownRefresh": false
     }
   }, {
     "path": "pages/cart/index",
     "style": {
-      "navigationBarTitleText": "",
       "enablePullDownRefresh": false
     }
   }, {
     "path": "pages/user/index",
     "style": {
-      "navigationBarTitleText": "",
       "enablePullDownRefresh": false
     }
   }],
