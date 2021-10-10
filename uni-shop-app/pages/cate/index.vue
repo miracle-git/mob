@@ -29,7 +29,7 @@
 </template>
 
 <script>
-  import { getCategoryList } from '../../services/cate.service.js'
+  import { getCategoryList } from '@/services/cate.service'
 
   export default {
     data() {

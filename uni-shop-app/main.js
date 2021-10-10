@@ -2,14 +2,10 @@
 // #ifndef VUE3
 import Vue from 'vue'
 import App from './app'
-import Global from './global.js'
-// import SearchBox from './components/search-box/index.vue'
 import './utils/uni'
 import './utils/http'
 
 Vue.config.productionTip = false
-Vue.use(Global)
-// Vue.component('search-box', SearchBox)
 
 App.mpType = 'app'
 

@@ -37,7 +37,7 @@
 </template>
 
 <script>
-  import { getSwiperList, getCategoryList, getFloorList } from '../../services/home.service.js'
+  import { getSwiperList, getCategoryList, getFloorList } from '@/services/home.service'
   
   export default {
     data() {

@@ -5,11 +5,16 @@
 </template>
 
 <script>
+  import SearchBox from '@/components/search-box'
+  
   export default {
+    components: {
+      SearchBox
+    },
     data() {
       return {
         
-      };
+      }
     }
   }
 </script>
