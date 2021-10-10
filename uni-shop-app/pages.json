@@ -69,5 +69,11 @@
         "selectedIconPath": "static/tab-icons/user-active.png"
       }
     ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^app-(.*)": "@/components/app-$1/index.vue"
+    }
   }
 }

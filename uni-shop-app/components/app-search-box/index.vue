@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: "search-box",
+    name: "app-search-box",
     data() {
       return {
         
