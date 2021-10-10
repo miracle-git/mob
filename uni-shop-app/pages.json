@@ -73,7 +73,7 @@
   "easycom": {
     "autoscan": true,
     "custom": {
-      "^app-(.*)": "@/components/app-$1/index.vue"
+      "^app-(.*)": "@/components/$1/index.vue"
     }
   }
 }
