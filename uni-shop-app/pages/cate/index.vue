@@ -1,14 +1,19 @@
 <template>
   <view class="cate-page">
+    <!-- 搜索框 -->
+    <search-box></search-box>
+    <!-- 主分类 -->
     <scroll-view class="cate-left" scroll-y="true" :style="{'height':`${height}px`}">
       <block v-for="(item, index) in categoryList" :key="index">
         <view class="cate-left-item" :class="{'active':active===index}" @click="handleCateItem(index)">{{item.cat_name}}</view>
       </block>
     </scroll-view>
+    <!-- 二级分类 -->
     <scroll-view class="cate-right" scroll-y="true" :style="{'height':`${height}px`}" :scroll-top="scrollTop">
       <block v-for="(item, index) in subCateList" :key="index">
         <view class="cate-right-item" v-if="item.children&&item.children.length">
           <view class="cate-item-title">/ {{item.cat_name }} /</view>
+          <!-- 三级分类 -->
           <view class="cate-list">
             <block v-for="(child, cindex) in item.children" :key="cindex">
               <view class="cate-list-item" @click="handleSubItem(child)">
