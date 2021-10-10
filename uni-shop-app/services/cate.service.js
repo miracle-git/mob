@@ -1,0 +1,1 @@
+export const getCategoryList = () => uni.$http.get('/api/public/v1/categories')

@@ -24,9 +24,11 @@
                    :style="{'width':`${item.product_list[0].image_width}rpx`}" mode="widthFix"></image>
           </navigator>
           <view class="floor-img-right">
-            <navigator class="floor-img-item" v-for="(product, pindex) in item.product_list.slice(1)" :key="pindex" :url="product.url">
-              <image :src="product.image_src" :style="{'width':`${product.image_width}rpx`}" mode="widthFix"></image>
-            </navigator>
+            <block v-for="(product, pindex) in item.product_list.slice(1)" :key="pindex" >
+              <navigator class="floor-img-item" :url="product.url">
+                <image :src="product.image_src" :style="{'width':`${product.image_width}rpx`}" mode="widthFix"></image>
+              </navigator>
+            </block>
           </view>
         </view>
       </view>
@@ -69,7 +71,7 @@
         return data.map(item => {
           item.product_list = item.product_list.map(product => ({
             ...product,
-            url: `/subpkg/goods_list/index?${product.navigator_url.split('?')[1]}`
+            url: `/subpkg/goods-list/index?${product.navigator_url.split('?')[1]}`
           }))
           return item
         })
