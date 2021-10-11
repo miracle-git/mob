@@ -1,5 +1,9 @@
 <template>
   <view class="home-page">
+    <!-- 搜索框 -->
+    <view class="search-box">
+      <app-search-box/>
+    </view>
     <!-- 轮播图 -->
     <swiper :indicator-dots="true" :autoplay="true" :circular="true" :interval="3000" :duration="1000">
       <swiper-item v-for="(item, index) in swiperList" :key="index">

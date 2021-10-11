@@ -1,53 +1,55 @@
 .cate-page {
-  display: flex;
-  .cate-left {
-    width: 120px;
-    .cate-left-item {
-      line-height: 60px;
-      background-color: #F7F7F7;
-      text-align: center;
-      font-size: 12px;
-      &.active {
-        position: relative;
-        background-color: #FFFFFF;
-        &::before {
-          content: ' ';
-          display: block;
-          position: absolute;
-          top: 50%;
-          left: 0;
-          width: 3px;
-          height: 30px;
-          transform: translateY(-50%);
-          background-color: #C00000;
+  .cate-scroll-container {
+    display: flex;
+    .cate-left {
+      width: 120px;
+      .cate-left-item {
+        line-height: 60px;
+        background-color: #F7F7F7;
+        text-align: center;
+        font-size: 12px;
+        &.active {
+          position: relative;
+          background-color: #FFFFFF;
+          &::before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 3px;
+            height: 30px;
+            transform: translateY(-50%);
+            background-color: #C00000;
+          }
         }
       }
     }
-  }
-  .cate-right {
-    flex: 1;
-    .cate-item-title {
-      padding: 15px 0;
-      text-align: center;
-      font-size: 12px;
-      font-weight: 600;
-    }
-    .cate-list {
-      display: flex;
-      flex-wrap: wrap;
-      .cate-list-item {
+    .cate-right {
+      flex: 1;
+      .cate-item-title {
+        padding: 15px 0;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .cate-list {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-        width: 33.33%;
-        image {
-          width: 60px;
-          height: 60px;
-        }
-        text {
-          font-size: 12px;
+        flex-wrap: wrap;
+        .cate-list-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+          width: 33.33%;
+          image {
+            width: 60px;
+            height: 60px;
+          }
+          text {
+            font-size: 12px;
+          }
         }
       }
     }

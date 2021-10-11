@@ -1,4 +1,9 @@
 .home-page {
+  .search-box {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
   swiper {
     height: 330rpx;
     .swiper-item, image {

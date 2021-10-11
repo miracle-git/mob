@@ -34,6 +34,12 @@
         "navigationBarTitleText": "",
         "enablePullDownRefresh": false
       }
+    }, {
+      "path": "search/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
     }]
   }],
   "globalStyle": {
@@ -73,6 +79,7 @@
   "easycom": {
     "autoscan": true,
     "custom": {
+      "^uni-(.*)": "@/components/uni-$1/index.vue",
       "^app-(.*)": "@/components/$1/index.vue"
     }
   }
