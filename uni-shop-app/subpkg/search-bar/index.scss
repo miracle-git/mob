@@ -1,0 +1,31 @@
+.search-page {
+  .search-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    .uni-searchbar {
+      .uni-searchbar__box-icon-search {
+        padding-right: 0;
+      }
+      background-color: #C00000;
+    }
+  }
+  .suggest-list {
+    padding: 0 5px;
+    .suggest-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #EFEFEF;
+      font-size: 12px;
+      .goods-name {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .history-list {
+  }
+}

@@ -35,9 +35,8 @@
         "enablePullDownRefresh": false
       }
     }, {
-      "path": "search/index",
+      "path": "search-bar/index",
       "style": {
-        "navigationBarTitleText": "",
         "enablePullDownRefresh": false
       }
     }]
@@ -79,7 +78,7 @@
   "easycom": {
     "autoscan": true,
     "custom": {
-      "^uni-(.*)": "@/components/uni-$1/index.vue",
+      "^uni-(.*)": "@/components/uni-ui/uni-$1/uni-$1.vue",
       "^app-(.*)": "@/components/$1/index.vue"
     }
   }
