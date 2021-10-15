@@ -26,6 +26,32 @@
       }
     }
   }
-  .history-list {
+  .history-box {
+    padding: 0 5px;
+    .no-data {
+      display: block;
+      width: 100%;
+      margin: 20px 0;
+      font-size: 13px;
+      text-align: center;
+      color: #666;  
+    }
+    .history-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 36px;
+      border-bottom: 1px solid #EFEFEF;
+      font-size: 13px;
+    }
+    .history-list {
+      display: flex;
+      flex-wrap: wrap;
+      .uni-tag {
+        margin-top: 5px;
+        margin-right: 5px;
+        line-height: 24px;
+      }
+    }
   }
 }

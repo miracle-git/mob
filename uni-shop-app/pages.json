@@ -25,13 +25,11 @@
     "pages": [{
       "path": "goods-detail/index",
       "style": {
-        "navigationBarTitleText": "",
         "enablePullDownRefresh": false
       }
     }, {
       "path": "goods-list/index",
       "style": {
-        "navigationBarTitleText": "",
         "enablePullDownRefresh": false
       }
     }, {
