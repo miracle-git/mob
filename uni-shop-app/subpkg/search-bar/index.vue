@@ -7,7 +7,7 @@
     <view class="suggest-list" v-if="suggestList.length">
       <view class="suggest-item" v-for="(item, index) in suggestList" :key="index" @click="handleSuggestItem(item)">
         <view class="goods-name">{{item.goods_name}}</view>
-        <uni-icons type="arrowright" size="16" @click="handleClearHistory"/>
+        <uni-icons type="arrowright" size="16"/>
       </view>
     </view>
     <!-- 搜索历史列表 -->
@@ -15,7 +15,7 @@
       <view v-if="historyList.length">
         <view class="history-title">
           <text>搜索历史</text>
-          <uni-icons type="trash" size="16"/>
+          <uni-icons type="trash" size="16" @click="handleClearHistory"/>
         </view>
         <view class="history-list">
           <uni-tag v-for="(item, index) in historyList" :key="index" :text="item" @click="handleHistoryItem(item)"/>
