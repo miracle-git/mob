@@ -1,32 +1,17 @@
 {
   "pages": [{
-    "path": "pages/home/index",
-    "style": {
-      "enablePullDownRefresh": false
-    }
+    "path": "pages/home/index"
   }, {
-    "path": "pages/cate/index",
-    "style": {
-      "enablePullDownRefresh": false
-    }
+    "path": "pages/cate/index"
   }, {
-    "path": "pages/cart/index",
-    "style": {
-      "enablePullDownRefresh": false
-    }
+    "path": "pages/cart/index"
   }, {
-    "path": "pages/user/index",
-    "style": {
-      "enablePullDownRefresh": false
-    }
+    "path": "pages/user/index"
   }],
   "subPackages": [{
     "root": "subpkg",
     "pages": [{
-      "path": "goods-detail/index",
-      "style": {
-        "enablePullDownRefresh": false
-      }
+      "path": "goods-detail/index"
     }, {
       "path": "goods-list/index",
       "style": {
@@ -35,10 +20,7 @@
         "onReachBottomDistance": 150
       }
     }, {
-      "path": "search-bar/index",
-      "style": {
-        "enablePullDownRefresh": false
-      }
+      "path": "search-bar/index"
     }]
   }],
   "globalStyle": {

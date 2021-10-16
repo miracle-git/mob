@@ -6,7 +6,7 @@
     <view class="goods-item-right">
       <text class="goods-name">{{item.goods_name}}</text>
       <view class="goods-info">
-        <text class="goods-price">¥{{item.goods_price | toFixed}}</text>
+        <text class="goods-price">{{item.goods_price | toFixed}}</text>
       </view>
     </view>
   </view>
@@ -28,7 +28,7 @@
     },
     filters: {
       toFixed(num) {
-        return Number(num).toFixed(2)
+        return `¥${Number(num).toFixed(2)}`
       }
     },
     methods: {

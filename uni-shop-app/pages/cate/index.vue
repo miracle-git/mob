@@ -18,7 +18,7 @@
             <view class="cate-list">
               <block v-for="(child, cindex) in item.children" :key="cindex">
                 <view class="cate-list-item" @click="handleSubItem(child)">
-                  <image :src="child.cat_icon"></image>
+                  <image :src="child.cat_icon"/>
                   <text>{{child.cat_name}}</text>
                 </view>
               </block>

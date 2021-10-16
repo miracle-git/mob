@@ -62,7 +62,7 @@
         // this.total = res.message.total
         this.total = 20 // 后端接口有些问题，因此这里只加载前两页
       }
-     }
+    }
   }
 </script>
 
