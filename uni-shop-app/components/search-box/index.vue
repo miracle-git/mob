@@ -9,7 +9,7 @@
 
 <script>
   export default {
-    name: "app-search-box",
+    name: 'app-search-box',
     props: {
       bgcolor: {
         type: String,

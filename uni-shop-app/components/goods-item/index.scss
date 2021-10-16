@@ -1,0 +1,25 @@
+.app-goods-item {
+    display: flex;
+    padding: 10px 5px;
+    border-bottom: 1px solid #EFEFEF;
+    .goods-item-left {
+      margin-right: 10px;
+      .goods-pic {
+        width: 100px;
+        height: 100px;
+        vertical-align: middle;
+      }
+    }
+    .goods-item-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .goods-name {
+        font-size: 13px;
+      }
+      .goods-price {
+        font-size: 16px;
+        color: #C00000;
+      }
+    }
+  }

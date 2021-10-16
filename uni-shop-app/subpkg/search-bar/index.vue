@@ -27,7 +27,6 @@
 </template>
 
 <script>
-  import storage from 'good-storage'
   import { getSuggestList } from '@/services/goods.service'
   
   export default {
