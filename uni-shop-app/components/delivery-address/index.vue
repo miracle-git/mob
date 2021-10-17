@@ -26,11 +26,11 @@
   export default {
     name: 'app-delivery-address',
     computed: {
-      ...mapState('user', ['address']),
-      ...mapGetters('user', ['detailAddress'])
+      ...mapState('addr', ['address']),
+      ...mapGetters('addr', ['detailAddress'])
     },
     methods: {
-      ...mapMutations('user', ['updateAddress']),
+      ...mapMutations('addr', ['updateAddress']),
       async handleSelectAddress() {
         const [err, res] = await uni.chooseAddress().catch(err => err)
         if (err) {

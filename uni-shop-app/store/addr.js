@@ -9,7 +9,7 @@ export default {
   mutations: {
     updateAddress(state, address) {
       state.address = address
-      this.commit('user/saveAddress')
+      this.commit('addr/saveAddress')
     },
     saveAddress(state) {
       storage.setSync(CacheKeys.address, state.address)
