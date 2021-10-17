@@ -1,11 +1,14 @@
 <template>
-  <view>
+  <view class="user-page">
     User
   </view>
 </template>
 
 <script>
+  import { badge } from '@/mixins'
+  
   export default {
+    mixins: [badge],
     data() {
       return {
         
@@ -17,6 +20,6 @@
   }
 </script>
 
-<style>
-
+<style lang="scss">
+  @import "./index.scss";
 </style>

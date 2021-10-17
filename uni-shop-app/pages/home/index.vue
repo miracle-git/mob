@@ -41,9 +41,11 @@
 </template>
 
 <script>
+  import { badge } from '@/mixins'
   import { getSwiperList, getCategoryList, getFloorList } from '@/services/home.service'
   
   export default {
+    mixins: [badge],
     data() {
       return {
         swiperList: [],

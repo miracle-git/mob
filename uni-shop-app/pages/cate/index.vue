@@ -31,9 +31,11 @@
 </template>
 
 <script>
+  import { badge } from '@/mixins'
   import { getCategoryList } from '@/services/cate.service'
 
   export default {
+    mixins: [badge],
     data() {
       return {
         height: 0,

@@ -21,12 +21,14 @@
           <uni-tag v-for="(item, index) in historyList" :key="index" :text="item" @click="handleHistoryItem(item)"/>
         </view>
       </view>
-      <text class="no-data" v-else>暂无搜索历史</text>
+      <app-block-text text="暂无搜索历史" v-else/>
     </view>
   </view>
 </template>
 
 <script>
+  import storage from '@/utils/storage'
+  import { CacheKeys } from '@/config/app.conf'
   import { getSuggestList } from '@/services/goods.service'
   
   export default {
@@ -34,13 +36,12 @@
       return {
         timer: null,
         keyword: '',
-        cacheKey: 'uni-shop-keywords',
         suggestList: [],
         historyList: []
       }
     },
     onLoad() {
-      this.historyList = JSON.parse(uni.getStorageSync(this.cacheKey) || '[]')
+      this.historyList = storage.getSync(CacheKeys.history, '[]')
     },
     methods: {
       handleInput(val) {
@@ -66,11 +67,11 @@
         if (this.historyList.indexOf(this.keyword) < 0) {
           this.historyList.unshift(this.keyword)
         }
-        uni.setStorageSync(this.cacheKey, JSON.stringify(this.historyList))
+        storage.setSync(CacheKeys.history, this.historyList)
       },
       handleClearHistory() {
         this.historyList = []
-        uni.setStorageSync(this.cacheKey, '[]')
+        storage.setSync(CacheKeys.history, [])
       },
       handleHistoryItem(item) {
         uni.navigateTo({

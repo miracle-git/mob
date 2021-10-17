@@ -5,7 +5,7 @@
         <app-goods-item :item="item"/>
       </block>
     </view>
-    <text class="more-text">{{moreText}}</text>
+    <app-block-text :text="moreText"/>
   </view>
 </template>
 
@@ -65,7 +65,3 @@
     }
   }
 </script>
-
-<style lang="scss">
-  @import "./index.scss";
-</style>
