@@ -1,0 +1,49 @@
+.search-page {
+  .search-bar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    .uni-searchbar {
+      .uni-searchbar__box-icon-search {
+        padding-right: 0;
+      }
+      background-color: #C00000;
+    }
+  }
+  .suggest-list {
+    padding: 0 5px;
+    .suggest-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #EFEFEF;
+      font-size: 12px;
+      .goods-name {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .history-box {
+    padding: 0 5px;
+    .history-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 36px;
+      border-bottom: 1px solid #EFEFEF;
+      font-size: 13px;
+    }
+    .history-list {
+      display: flex;
+      flex-wrap: wrap;
+      .uni-tag {
+        margin-top: 5px;
+        margin-right: 5px;
+        line-height: 24px;
+      }
+    }
+  }
+}

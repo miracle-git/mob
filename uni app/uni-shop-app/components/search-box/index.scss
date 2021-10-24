@@ -1,0 +1,19 @@
+.app-search-box {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding: 0 10px;
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background-color: #FFFFFF;
+    .placeholder {
+      color: #808080;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+  }
+}

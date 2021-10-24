@@ -1,0 +1,1 @@
+export const userLogin = (params) => uni.$http.post('/api/public/v1/users/wxlogin', params)

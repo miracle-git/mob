@@ -1,0 +1,13 @@
+{
+  "name": "uni-shop-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@escook/request-miniprogram": "^0.2.1"
+  }
+}
