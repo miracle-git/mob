@@ -1,2 +1,2 @@
 # uni
-including all the uni app projects base on m2
+including all mobile app projects by android, ios, uni
