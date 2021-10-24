@@ -1,10 +1,12 @@
 <template>
   <view class="user-page">
-    User
+    <app-userinfo v-if="token"/>
+    <app-login v-else/>
   </view>
 </template>
 
 <script>
+  import { mapState } from 'vuex'
   import { badge } from '@/mixins'
   
   export default {
@@ -13,6 +15,9 @@
       return {
         
       }
+    },
+    computed: {
+      ...mapState('auth', ['token'])
     },
     methods: {
       

@@ -38,7 +38,7 @@
             this.handleReAuth()
           }
         } else {
-          if (res && res.errMsg === Messages.auth.ok) {
+          if (res && res.errMsg === Messages.auth.ok.address) {
             this.updateAddress(res)
           }
         }
