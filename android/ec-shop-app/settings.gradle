@@ -8,3 +8,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ec-shop-app"
 include ':app'
+include ':compiler'
+include ':core'
+include ':ec'
+include ':annotation'

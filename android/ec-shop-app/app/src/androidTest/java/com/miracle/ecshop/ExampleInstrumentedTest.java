@@ -1,4 +1,4 @@
-package com.miracle.ec;
+package com.miracle.ecshop;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.miracle.ec", appContext.getPackageName());
+        assertEquals("com.miracle.ecshop", appContext.getPackageName());
     }
 }
