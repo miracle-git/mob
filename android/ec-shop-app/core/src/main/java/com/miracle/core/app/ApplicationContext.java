@@ -10,6 +10,10 @@ public final class ApplicationContext {
         return Configurator.getInstance();
     }
 
+    public static Context getApplication() {
+        return (Context) getConfigurations().get(ConfigType.APPLICATION_CONTEXT.name());
+    }
+
     private static WeakHashMap<String, Object> getConfigurations() {
         return Configurator.getInstance().getConfigMaps();
     }

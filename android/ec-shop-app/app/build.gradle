@@ -35,4 +35,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // Fragment 依赖
+    implementation "me.yokeyword:fragmentation:0.10.1"
+    implementation "me.yokeyword:fragmentation-swipeback:0.7.9"
 }

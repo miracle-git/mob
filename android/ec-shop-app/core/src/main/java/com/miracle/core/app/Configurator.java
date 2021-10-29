@@ -38,7 +38,7 @@ public final class Configurator {
         }
     }
 
-    final <T> T getConfiguration(Enum<ConfigType> key) {
+    final <T> T getConfigurations(Enum<ConfigType> key) {
         checkConfiguration();
         return (T) CONFIG_MAPS.get(key.name());
     }

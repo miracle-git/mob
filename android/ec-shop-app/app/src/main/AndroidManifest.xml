@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ecshopapp">
         <activity
-            android:name=".MainActivity"
+            android:name=".ECShopActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
